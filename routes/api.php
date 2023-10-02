@@ -28,16 +28,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::resource('country',     CountryController::class);
+Route::resource('country',     CountryController::class); // api doc done
 Route::resource('account',     AccountController::class);
-Route::resource('sub-account', SubAccountController::class);
-Route::resource('sender',      SenderController::class);
-Route::resource('province',    ProvinceController::class);
-Route::resource('nationality', NationalityController::class);
-Route::resource('currency',    CurrencyController::class);
-Route::resource('destination', DestinationController::class);
-Route::resource('remittance-commission-rates', RemittanceCommissionRatesController::class);
-
-
-// TODO: Write api documentation for Remittance Commission Rates controller
-
+Route::resource('sub-account', SubAccountController::class); // api doc done
+Route::resource('sender',      SenderController::class); // api doc done
+Route::resource('currency',    CurrencyController::class); // api doc done
+Route::resource('nationality', NationalityController::class); // api doc done
+Route::resource('province',    ProvinceController::class); // api doc done
+Route::resource('destination', DestinationController::class); // api doc done
+Route::resource('remittance-commission-rates', RemittanceCommissionRatesController::class); // api doc done

@@ -20,7 +20,8 @@ class DatabaseSeeder extends Seeder
                 DestinationSeeder::class,
                 AccountSeeder::class,
                 SenderSeeder::class,
-                SubAccountSeeder::class
+                SubAccountSeeder::class,
+                CurrencySeeder::class
             ]
         );
     }
