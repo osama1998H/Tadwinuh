@@ -39,6 +39,8 @@ In your project's root directory, create a new `database` directory if it doesn'
 Open a terminal in your project's root directory and run the following command to migrate the database and seed it with initial data:
 
 ```bash
+php artisan key:generate
+
 php artisan migrate:fresh --seed
 ```
 
